@@ -134,6 +134,12 @@ section{
     header .container h1 {
         font-size: 35px;
     }
+    nav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        top: unset;
+    }
 
     nav ul a{
         font-size: 12px;
