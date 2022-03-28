@@ -72,6 +72,7 @@ nav{
     padding: 0 100px;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 nav img{
@@ -109,7 +110,9 @@ nav ul a svg{
 .about-me .img-container img{
     width: 60%;
     height: 100%;
-    border-radius: 50%;    
+    object-fit: cover;
+    border-radius: 50%;
+
 }
 
 .about-me .img-container .line{
@@ -127,6 +130,28 @@ nav ul a svg{
 
 /*RESPONNSIVIDADE*/
 
+/*dispositivos menores*/
+@media (max-width: 1000px){
+   header .container{
+    width: 100%;
+    padding: 0 30px;
+}
+nav{
+    padding: 0 30px;
+}
+.about-me{
+    flex-direction: column;
+}
+.about-me .container, .about-me .img-container{
+    width: 100%;
+}
+.about-me .container{
+    padding-right: 0 ;
+}
+.about-me .img-container{
+    margin: 70px 0;
+}
+}
 /*tablet*/
 
 @media (max-width: 767px){
@@ -179,5 +204,7 @@ nav ul a svg{
         display: block;
         margin: 0 auto 5px;
     }
+    .about-me{
+        padding: 40px;
+    }
 }
-
