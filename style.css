@@ -157,7 +157,7 @@ nav ul a svg{
 
 .portifolio{
     background: url("./assets/portfolio-bg.png");
-    padding-bottom: 40px;
+    height: 800px;
 }
 .portifolio .portifolio-container .portifolio-card{
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
@@ -172,6 +172,24 @@ nav ul a svg{
 
 .portifolio .portifolio-container .portifolio-card .img-container{
     margin: 0 25px 25px;
+    position: relative;
+
+}
+
+.portifolio .portifolio-container .portifolio-card .img-container img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.portifolio .portifolio-container .img-container .line{
+    width: calc(100% + 50px);
+    height: calc(100% + 24px);
+    border: 1px solid var(--ciano);
+    transform: rotate(-1.93deg);
+    border-radius: 16px;
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 100%/2 - 24px);
 }
 .portifolio .portifolio-container .portifolio-card .stacks ul{
     display: flex;
@@ -180,10 +198,12 @@ nav ul a svg{
    
 }
 .portifolio .portifolio-container .portifolio-card .stacks ul li{
+    font-size: 10px;
     color: var(--ciano);
     border: 1px solid var(--ciano);
     border-radius: 16px;
     padding: 3px 15px;
+    margin-top: 10px;
 }
 .portifolio-card .stacks ul li +  li{
     margin-left : 10px;
@@ -218,16 +238,19 @@ nav{
 .about-me .img-container{
     margin: 70px 0;
 }
-.service{
+.service, .portifolio{
     padding: 0;
 }
-.service .service-container{
+.service .service-container, .portifolio .portifolio-container{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
-.card + .card{
+.card + .card, .portifolio-card + .portifolio-card{
     margin-top: 40px;
+}
+.portifolio{
+    height: 100%;
 }
 
 /*tablet*/
