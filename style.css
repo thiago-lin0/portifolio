@@ -12,7 +12,7 @@ html,body{
     --ciano: #15CDCB;
     --preto: #212226;
     --branco: #e0d0d0;
-
+    --btn: #273034;
     --menu-heigth: 65px;
 }
 button,body,input,select,textarea{
@@ -39,6 +39,20 @@ p{
     padding: 8px 36px;
     font-weight: bold;
     font-size: 18px;
+}
+.secondary-btn{
+background: var(--btn);
+border: 1px solid var(--azul);
+border-radius: 16px;
+color: var(--ciano);
+font-weight: bold;
+height: 60px;
+
+display: flex;
+align-items: center;
+}
+.secondary-btn img{
+    margin-right: 15px;
 }
 .color-ciano{
     color: var(--ciano);
@@ -214,6 +228,28 @@ p{
 }
 p + p{
     padding-bottom: 20px ;
+}
+.curriculum{
+    padding: 0 100px;
+    text-align: center;
+}
+.curriculum .cv-container{
+    display: flex;
+    margin: 15px 0;
+}
+.curriculum .cv-container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+.curriculum .cv-container .content .cv-content{
+    display: grid;
+    grid-template-columns: 150px auto;
+    gap: 1rem;
+    margin-bottom: 50px;
 }
 /*RESPONNSIVIDADE*/
 
