@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiago Lino</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
     <header class="presantation">
@@ -19,21 +21,21 @@
           Angular e Vue js em grnades projetos. Adoro aprender coisas novas e
           trabalhar em equipe
         </p>
-        <button class="btn">Entre em Contato</button>
+        <button class="btn" onclick="window.open('https://api.whatsapp.com/send?phone=5588992436750')">Entre em Contato</button>
       </div>
     </header>
 
     <nav>
       <img src="./assets/logo/_.svg" alt="logo" />
       <ul>
-        <a href="#"><i data-feather="user"></i>Sobre mim</a>
-        <a href="#"><i data-feather="briefcase"></i>Serviços</a>
-        <a href="#"><i data-feather="image"></i>Portifólio</a>
-        <a href="#"><i data-feather="list"></i>Curriculo</a>
-        <a href="#"><i data-feather="send"></i>Contato</a>
+        <a href="#about-me"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#service"><i data-feather="briefcase"></i>Skills</a>
+        <a href="#portfolio"><i data-feather="image"></i>Portifólio</a>
+        <a href="#curriculum"><i data-feather="list"></i>Curriculo</a>
+        <a href="#contato"><i data-feather="send"></i>Contato</a>
       </ul>
     </nav>
-    <section class="about-me">
+    <section id="about-me" class="about-me">
         <div class="container">
             <h1 class="color-ciano">Sobre mim</h1>
             <p>Cearense de 27 anos, trabalho como desenvolvedor frontend. Sou estudante de Analise de desenvolvimento de Sistemas pela
@@ -49,7 +51,7 @@
             <img src="./assets/profile.jpeg"" alt="about me">
         </div>
     </section>
-    <section class="service">
+    <section id="service" class="service">
       <h1 class="color-azul">Skills</h1>
       <div class="service-container">
 
@@ -74,7 +76,7 @@
     </div>
     </section>
 
-    <section class="portifolio">
+    <section id="portifolio" class="portifolio">
       <h1 class="color-ciano">Portifólio</h1>
       <div class="portifolio-container">
         <div class="portifolio-card">
@@ -133,10 +135,10 @@
       </div>  
     </section>
 
-    <section  class="curriculum">
+    <section id="curriculum" class="curriculum">
       <h1 class="color-ciano">Curriculo</h1>
       <div class="cv-container">
-        <img src="./assets/img/curriculum-img.png" alt="foto de um Curriculo">
+        <img class="cv-img" src="./assets/img/curriculum-img.png" alt="foto de um Curriculo">
 
         <div class="content">
           <div class="cv-content">
@@ -153,6 +155,21 @@
         </div>
       </div>
     </section>
+
+    <section id="contato" class="contato">
+      <h1>Vamos trabalhar juntos?</h1>
+      <p>Se você gostou do meu trabalho e quer que eu faça parte do seu time, entre em contato comigo!</p>
+      <button class="btn" onclick="window.open('https://api.whatsapp.com/send?phone=5588992436750')">Entre em contato</button>
+      <div class="social-media">
+        <a href="mailto: thiagolinu@gmail.com" target="_blank" title="gmail"><i class="color-ciano" data-feather="mail"></i></a>
+        <a href="https://github.com/thiago-lin0"><i class="color-ciano" data-feather="github"></i></a>
+        <a href="https://www.linkedin.com/in/thiago-lino-355054105/"><i class="color-ciano" data-feather="linkedin"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5588992436750"><i class="color-ciano" data-feather="phone-call"></i></a>
+        
+      </div>
+    </section>
+
+    <footer><p>Feito com ❤️ por Thiago Lino - 2022</p></footer>
     <script>
         feather.replace()
       </script>
